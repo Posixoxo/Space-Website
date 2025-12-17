@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caprasimo&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <title>Space tourism website</title>
+</head>
+<body class="background2">
+
+
+  <header class="navbar">
+
+    <img src="assets/shared/logo.svg" alt="logo" class="logo">
+    <img src="assets/shared/icon-hamburger.svg" alt="open" class="hamburger mobile-version" id="menuToggle">
+
+    <div class="tablet-nav tablet-version">
+      <div class="tablet-n-contents">
+        <a class="menu-item" href="index.html">
+          Home
+      </a>
+      <a class="menu-item" href="destination-moon.html">
+         Destination
+      </a>
+      <a class="menu-item" href="crew-commander.html">
+         Crew
+      </a>
+      <a class="menu-item" href="technology-vehicle.html">
+          Technology
+      </a>
+      </div>
+    </div>
+
+    <div class="navline desktop-version"></div>
+
+    <div class="desktop-nav desktop-version">
+      <div class="desktop-n-contents">
+        <a class="menu-item" href="index.html">
+          <span class="menu-number">00</span>Home
+      </a>
+      <a class="menu-item" href="destination-moon.html">
+          <span class="menu-number">01</span>Destination
+      </a>
+      <a class="menu-item" href="crew-commander.html">
+          <span class="menu-number">02</span>Crew
+      </a>
+      <a class="menu-item" href="technology-vehicle.html">
+          <span class="menu-number">03</span>Technology
+      </a>
+      </div>
+    </div>
+    
+  </header>
+
+  <nav class="menu-overlay" id="menuOverlay">
+    <ul class="menu-list">
+        <a class="menu-item" href="index.html">
+            <span class="menu-number">00</span>Home
+        </a>
+        <a class="menu-item" href="destination-moon.html">
+            <span class="menu-number">01</span>Destination
+        </a>
+        <a class="menu-item" href="crew-commander.html">
+            <span class="menu-number">02</span>Crew
+        </a>
+        <a class="menu-item" href="technology-vehicle.html">
+            <span class="menu-number">03</span>Technology
+        </a>
+    </ul>
+</nav>
+
+<section class="tab-margin">
+
+    <div class="description destination-description">
+      <h4 style="color: grey;">01</h4>
+      <h4>PICK YOUR DESTINATION</h4>
+    </div>
+
+    <div class="flex-planets">
+
+      <div class="moon-cover">
+        <img src="assets/destination/image-titan.png" alt="titan" class="planet-names">
+      </div>
+  
+  
+      <div class="planets">
+  
+        <div class="planets-list">
+          <a href="destination-moon.html">MOON</a>
+          <a href="destination-mars.html">MARS</a>
+          <a href="destination-europa.html">EUROPA</a>
+          <a href="destination-titan.html">TITAN</a>
+        </div>
+  
+        <div class="planet-description">
+          <h1>TITAN</h1>
+          <p>  The only moon known to have a dense atmosphere other than Earth, Titan 
+            is a home away from home (just a few hundred degrees colder!). As a 
+            bonus, you get striking views of the Rings of Saturn.</p>
+        </div>
+  
+        <div class="line"></div>
+  
+        <div class="flex-d-t">
+          <div class="distance">
+            <p>AVG. DISTANCE</p>
+            <h2>1.6 BIL. KM</h2>
+          </div>
+  
+          <div class="time">
+            <p>EST. TRAVEL TIME</p>
+            <h2>7 YEARS</h2>
+          </div>
+  
+        </div>
+  
+      </div>
+
+    </div>
+
+
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

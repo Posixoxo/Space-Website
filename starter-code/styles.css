@@ -1,0 +1,1140 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile Styles */
+
+.background{
+    background-image: url('assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    color: white;
+    margin: 0 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.hamburger {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 120px 8px 32px 8px;
+}
+
+.menu-overlay.active {
+    right: 0;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.menu-list a{
+    text-decoration: none;
+    font-family: "Barlow Condensed";
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.menu-item {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.menu-item:hover {
+    opacity: 0.7;
+}
+
+.menu-number {
+    font-weight: 900;
+    margin-right: 12px;
+}
+
+.menu-list .menu-item {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.menu-list .menu-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #FFFFFF;
+    transition: height 0.3s ease;
+}
+
+.menu-list .menu-item.active::after {
+    height: 100%;
+}
+
+.menu-list .menu-item:hover::after {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.description{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.description h4{
+    font-family: "Barlow Condensed";
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+.description h1{
+    font-size: 75px;
+    margin-top: 0;
+    font-family: "Bellefair", serif;
+    font-weight: 100;
+}
+
+.description-text{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    margin: 130px 0 40px;
+}
+
+.explore a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    width: 110px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    padding: 70px 30px 15px 30px;
+}
+
+
+/* destination */
+
+
+.background2{
+    background-image: url('assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    color: white;
+    margin: 0 20px;
+}
+
+.destination-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;
+}
+
+.destination-description h4{
+    font-family: "Barlow Condensed";
+    font-style: normal;
+}
+
+.moon-cover{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+.planet-names{
+    display: block;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+.planets-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.planets-list a{
+    text-decoration: none;
+    color: white;
+    font-family: "Bellefair";
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease;
+    padding-bottom: 8px;
+}
+
+.planets-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease;
+    border-radius: 50%;
+}
+
+.planets-list a.active {
+    color: #FFFFFF;
+}
+
+.planets-list a.active::after {
+    width: 100%;
+}
+
+.planets-list a:hover::after {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.planets-list a:hover {
+    color: #FFFFFF;
+}
+
+.planet-description h1{
+    font-size: 60px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Barlow Condensed";
+    font-weight: 100;
+}
+
+.planet-description p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+.line{
+    border: 0.1px solid grey;
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+.flex-d-t{
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.distance{
+    display: flex;
+    flex-direction: column;
+}
+
+.distance p{
+    font-size: 13px;
+    margin-bottom: 0;
+    font-family: "Bellefair";
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+.distance h2{
+    margin-top: 7px;
+    font-size: 35px;
+    font-family: "Barlow Condensed";
+    font-weight: 100;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+}
+
+.time p{
+    font-size: 13px;
+    margin-bottom: 0;
+    font-family: "Bellefair";
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.time h2{
+    margin-top: 7px;
+    font-size: 35px;
+    font-family: "Barlow Condensed";
+    font-weight: 100;
+}
+
+
+
+/* crew */
+
+.background3{
+    background-image: url(assets/crew/background-crew-mobile.jpg);
+    background-size: cover;
+    color: white;
+    margin: 0 20px;
+}
+
+.crew-container{
+    text-align: center;
+}
+
+.crew-description h4{
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: "Bellefair";
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.crew-description h2{
+    margin-top: 9px;
+    font-family: "Bellefair";
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.crew-container p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.progress{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+
+.progress-bar{
+    border: 1px solid transparent;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.17);
+    border-radius: 50%;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.progress-bar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.progress-bar.active {
+    background-color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+.progress-bar:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.crew-image{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.crew-x{
+    display: block;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* technology */
+
+.background4{
+    background-image: url(assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+    color: white;
+    margin: 0 20px;
+}
+
+.tech-container{
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.butt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+    margin: 15px 0 15px 0;
+    padding: 0;
+}
+
+.btn{
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: "Bellefair";
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.btn.mobile-version.active {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn.mobile-version.active a {
+    color: rgba(16, 19, 36, 0.95);
+}
+
+.btn.mobile-version:hover {
+    border-color: #FFFFFF;
+}
+
+.tech-description{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.tech-description h6{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Bellefair";
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tech-description h2{
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-family: "Bellefair";
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.tech-description p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.tech-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.tech-x{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.mobile-version{
+    display: block;
+}   
+
+.tablet-version{
+    display: none;
+}
+
+.desktop-version{
+    display: none;
+}
+
+
+
+
+/* Tablet Styles */
+
+@media (min-width: 540px){
+
+    .mobile-version{
+        display: none;
+    }   
+    
+    .tablet-version{
+        display: block;
+    }
+
+    .body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .background{
+        background-image: url('assets/home/background-home-tablet.jpg');
+        margin: 0 0 0 20px;
+    }
+
+    .background2{
+        background-image: url('assets/destination/background-destination-tablet.jpg');
+        margin: 0 0 0 20px;
+    }
+
+    .background3{
+        background-image: url('assets/crew/background-crew-tablet.jpg');
+        margin: 0 0 0 20px;
+    }
+
+    .background4{
+        background-image: url('assets/technology/background-technology-tablet.jpg');
+        margin: 0 0 0 20px;
+    }
+
+    .navbar{
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo{
+        margin-top: 5px;
+    }
+
+    .tablet-nav{
+        background-color:  rgba(16, 19, 36, 0.95);
+        color: white;
+        display: flex;
+        padding: 25px 20px 28px 34px;
+    }
+
+    .tablet-n-contents{
+        display: flex;
+        gap: 25px;
+    }
+
+    .tablet-n-contents a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 10px;
+        font-family: "Barlow Condensed";
+        font-weight: 100;
+        font-style: normal;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    
+    .tablet-n-contents a.active::after {
+        content: '';
+        position: absolute;
+        bottom: -28px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        transition: width 0.8s ease;
+    }
+    
+    .tablet-n-contents a.active::after {
+        width: 100%;
+    }
+    
+    .tablet-n-contents a:hover::after {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .description{
+        margin: 70px 0 0 0;
+    }
+
+    .description h4{
+        margin-bottom: 6px;
+    }
+
+    .description h1{
+        font-size: 120px;
+        margin-bottom: 10px;
+    }
+
+    .description-text{
+        text-align: center;
+        padding: 0 70px; 
+    }
+
+    .destination-description{
+        display: flex;
+        justify-content: left;
+    }
+
+    .destination-description h4{
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .explore{
+        margin: 170px 0 60px 0;
+    }
+
+    .moon-cover{
+        margin-top: 70px;
+    }
+
+    .planets-list a {
+        position: relative;
+        padding-bottom: 10px;
+        transition: color 0.3s ease;
+    }
+
+    .planets-list a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color: #FFFFFF;
+        transition: width 0.3s ease;
+        border-radius: 50%;
+    }
+    
+    .planets-list a.active {
+        color: #FFFFFF;
+    }
+    
+    .planets-list a.active::after {
+        width: 100%;
+    }
+
+    .planets-list a:hover::after {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .planets-list a:hover {
+        color: #FFFFFF;
+    }
+
+    .crew-container{
+        margin-top: 30px;
+    }
+
+    .crew-container p{
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .crew-description h4{
+        margin-top: 0;
+    }
+
+    .crew-x{
+        width: 300px;
+    }
+
+    .tab-margin{
+        margin: 0 20px 0 0;
+    }
+
+    .progress{
+        margin: 0;
+    }
+
+    .progress-bar {
+        margin: 20px 0 30px 0;
+        transition: background-color 0.4s ease, transform 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .progress-bar a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+    .progress-bar.active {
+        background-color: #FFFFFF;
+        transform: scale(1.1);
+    }
+
+    .progress-bar:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .butt{
+        margin: 20px 0;
+    }
+
+    .btn.active {
+        background-color: #FFFFFF;
+        border-color: #FFFFFF;
+    }
+    
+    .btn.active a {
+        color: rgba(16, 19, 36, 0.95);
+    }
+    
+    .btn:hover {
+        border-color: #FFFFFF;
+    }
+}
+
+
+@media (min-width: 1024px){
+
+.mobile-version{
+    display: none;
+}
+
+.tablet-version{
+    display: none;
+}
+
+.desktop-version{
+    display: block;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    background-image: url('assets/home/background-home-desktop.jpg');
+    margin: 0 0 0 20px;
+}
+
+.background2{
+    background-image: url('assets/destination/background-destination-desktop.jpg');
+    margin: 0 0 0 20px;
+}
+
+.background3{
+    background-image: url('assets/crew/background-crew-desktop.jpg');
+    margin: 0 0 0 20px;
+}
+
+.background4{
+    background-image: url('assets/technology/background-technology-desktop.jpg');
+    margin: 0 0 0 20px;
+}
+
+.navbar{
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navline{
+    border: 0.1px solid grey;
+    width: 100%;
+    margin: 0 40px 0 40px;
+    position: relative;
+    z-index: 1;
+    margin-right: -25px;
+    flex-grow: 1;
+    opacity: 0.3;
+}
+
+.desktop-nav{
+    background: rgba(128, 128, 128, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+    color: #ffffff;
+    display: flex;
+    padding: 25px 70px 28px 34px;
+    position: relative;
+}
+
+.desktop-n-contents{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 0 0 40px;
+}
+
+.desktop-n-contents a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Barlow Condensed";
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu-number{
+    margin-right: 8px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed";
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.desktop-n-contents a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+.desktop-n-contents a.active::after {
+    width: 100%;
+}
+
+.desktop-n-contents a:hover::after {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.desktop-description-container{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 100px;
+    justify-content: space-between;
+}
+
+.description{
+    text-align: left;
+}
+
+.description h4{
+    font-family: "Barlow Condensed";
+    font-weight: 100;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+.description-text p{
+    max-width: 400px;
+}
+
+.description-text {
+    text-align: left;
+    padding: 0 260px 0 0;
+}
+
+.destination-description{
+    margin: 40px 90px 10px 90px;
+    padding: 0;
+    display: flex;
+    gap: 17px;
+}
+
+.destination-description h4{
+    font-size: 18px;
+    word-spacing: 5px;
+}
+
+.flex-planets{
+    display: flex;
+    flex-direction: row;
+}
+
+.moon-cover{
+    flex: 1.7;
+}
+
+.planet-names{
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    margin: 0 0 0 50px;
+}
+
+.planets{
+    flex: 1;
+    padding-top: 30px;
+    padding-right: 60px;
+}
+
+.planets-list{
+    justify-content: left;
+}
+
+.planets-list a {
+    position: relative;
+    padding-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.planets-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+.planets-list a.active {
+    color: #FFFFFF;
+}
+
+.planets-list a.active::after {
+    width: 100%;
+}
+
+.planets-list a:hover::after {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.planets-list a:hover {
+    color: #FFFFFF;
+}
+
+.planet-description h1{
+    text-align: left;
+}
+
+.planet-description p{
+    text-align: left;
+}
+
+.line{
+    opacity: 0.3;
+}
+
+.flex-d-t{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.distance{
+    text-align: left;
+}
+
+.distance p{
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.distance h2{
+    font-size: 25px;
+}
+
+.time{
+    text-align: left;
+}
+
+.time p{
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.time h2{
+    font-size: 25px;
+}
+
+.desktop-crew-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 90px;
+}
+
+.flex-description-image{
+    flex: 2;
+    text-align: left;
+    padding-top: 70px;
+}
+
+.crew-image{
+    flex: 2;
+}
+
+.crew-x{
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+    margin-left: 50px;
+}
+
+.crew-description h4{
+    font-size: 25px;
+}
+
+.crew-description h2{
+    font-size: 38px;
+}
+
+.flex-description-image p{
+    font-size: 15px;
+    max-width: 400px;
+}
+
+.progress{
+    justify-content: left;
+}
+
+.progress-bar{
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.17);
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.progress-bar.active {
+    background-color: #FFFFFF;
+    transform: scale(1.2);
+}
+
+.progress-bar:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.butt{
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: left;
+    flex: 0 0 auto;
+}
+
+.btn{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+}
+
+.btn.desktop-version.active {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn.desktop-version.active a {
+    color: rgba(16, 19, 36, 0.95);
+}
+
+.btn.desktop-version:hover {
+    border-color: #FFFFFF;
+}
+
+.flex-butt-tech{
+    display: flex;
+    margin: 0 90px;
+    gap: 50px;
+}
+
+.tech-description{
+    padding-top: 0;
+    text-align: left;
+    flex: 1; 
+    max-width: 400px;
+}
+
+.tech-description h2{
+    font-size: 30px;
+}
+
+.tech-description p{
+    text-align: left;
+}
+
+.tech-image{
+    flex: 1;
+    position: relative;
+}
+
+.tech-x{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: -100px;
+    margin-left: 220px;
+    margin-bottom: 40px;
+}
+
+}
